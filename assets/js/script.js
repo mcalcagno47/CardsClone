@@ -215,7 +215,7 @@ function displayCards(card, exerciseIndex) {
 
             //create img
             var backCard = document.createElement("img");
-            backCard.setAttribute("src", "./assets/images/cardBack.png");
+            backCard.setAttribute("src", "assets/images/backOfCards.png");
             backCard.setAttribute("style", "width:250px; height:400px;");
 
             //append
