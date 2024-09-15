@@ -215,7 +215,7 @@ function displayCards(card, exerciseIndex) {
 
             //create img
             var backCard = document.createElement("img");
-            backCard.setAttribute("src", "assets/Images/cardBack2.jpg");
+            backCard.setAttribute("src", "https://i.ebayimg.com/images/g/1JsAAOSwJfdiE9fW/s-l400.jpg");
             backCard.setAttribute("style", "width:250px; height:400px;");
 
             //append
