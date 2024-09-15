@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<link>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./assets/css/normalize.css">
+</link>
+<link rel="stylesheet" href="./assets/css/app.css">
+</link>
+<link rel="stylesheet" href="./assets/css/foundation.min.css">
+</link>
+<link rel="stylesheet" href="./assets/css/style.css">
+</link>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Limelight">
+</link>
+
+<title>Cards Against Apathy</title>
+</head>
+
+<body class="favoritesBackground">
+    <a id="goBack" class="button" href="./index.html">
+        Go Back To Homepage
+    </a>
+
+    <button id="delWorkout" class="button" style="float:right;">Delete Displayed Workout</button>
+
+    <header>
+        <h1 class="favoritesTitle">Favorite Workouts</h1>
+    </header>
+    <main  >
+        <div style="margin-left:.5rem;" id="favoriteList">
+
+        </div>
+
+        <div class="row small-up-2 medium-up-3 workout-cards" id="favoriteCards">
+
+        </div>
+
+        <!--Secondary Modal pops up for saving your workout-->
+      <div class="reveal" id="saveModal" data-reveal style="display:none">
+        <h2>Pick a name for your workout!</h2>
+        <form>
+          <div class="medium-12 cell">
+            <input type="text" id="workoutName" placeholder="Type awesome name for your workout here!">
+          </div>
+          <input class="button" id="saveButton" value="Save to Favorites">
+        </form>
+        <a class="secondary button" data-close id="goBack">Go Back</a>
+        <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </main>
+    <script href="js/vendor/modernizr.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/vendor/foundation.min.js"></script>
+    <script src="./assets/js/vendor/foundation.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/vendor/what-input.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/gameEnd.js"></script>
+    <script src="./assets/js/favorites.js"></script>
+  </body>
+  
+  </html>

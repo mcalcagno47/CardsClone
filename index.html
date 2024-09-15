@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<link>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="./assets/css/normalize.css">
+</link>
+<link rel="stylesheet" href="./assets/css/app.css">
+</link>
+<link rel="stylesheet" href="./assets/css/foundation.min.css">
+</link>
+<link rel="stylesheet" href="./assets/css/style.css">
+</link>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Limelight">
+</link>
+
+<title>Cards Against Apathy</title>
+</head>
+
+<body>
+  <div class="wrapper" id="confetti">
+    <header>
+      <div class="heading">
+        <a class="button right" id="favoritesBtn" href="./favorites.html">Favorites</a>
+        <h1 class="title" id="title">CARDS AGAINST APATHY</h1>
+      </div>
+
+      <div id="mainMenu" class="mainMenu">
+        <h2 id="numberOfCards" style="margin: 30pt">How many exercises?</h2>
+        <div id="numberOfCardsDropdown">
+          <div class="row">
+            <div class="small-10 columns" style="width:55%; margin:auto">
+              <div class="slider" data-slider data-initial-start="3" data-start="1" data-end="10">
+                <span class="slider-handle" data-slider-handle role="slider" tabindex="1"
+                  aria-controls="sliderOutput1"></span>
+                <span class="slider-fill" data-slider-fill></span>
+              </div>
+            </div>
+            <input class="small-2 columns" type="number" id="sliderOutput1" style="width:25%; margin:auto;"></input>
+          </div>
+        </div>
+
+
+      <h2 id="suitChoice">Choose your type of workout! </h2>
+      <!-- Replace with images and change to words on hover -->
+      <input type="radio" class="radio-button" name="suitBtn" id="clubsIcon" value="Clubs"></input><label
+        class="icon clubs-icon" for="clubsIcon"><span class="suits">&clubs;</span><span
+          class="workout">Plyometrics</span></label>
+      <input type="radio" class="radio-button" name="suitBtn" id="diamondsIcon" value="Diamonds"></input><label
+        class="icon diamonds-icon" for="diamondsIcon"><span class="suits">&diams;</span><span
+          class="workout">Abdominals</span></label>
+      <input type="radio" class="radio-button" name="suitBtn" id="heartsIcon" value="Hearts"></input><label
+        class="icon hearts-icon" for="heartsIcon"><span class="suits">&hearts;</span><span
+          class="workout">Cardio</span></label>
+      <input type="radio" class="radio-button" name="suitBtn" id="spadesIcon" value="Spades"></input><label
+        class="icon spades-icon" for="spadesIcon"><span class="suits">&spades;</span><span
+          class="workout">Strength</span></label>
+      <input type="radio" class="radio-button" name="suitBtn" id="full-workout" value="Full Workout"></input><label
+        class="icon full-workout-icon" for="full-workout"><span class="suits">&clubs;&diams;&hearts;&spades;</span><span
+          class="workout">Full House</span></label>
+      <div id="submitContainer">
+
+        <button class="button" id="submitBtn" style="margin-top:1rem">Let's start sweatin'!</button>
+
+
+      </div>
+
+    </header>
+
+    <!-- display the backs of the chosen number of cards here -->
+    <!-- <div class="row small-up-2 medium-up-3 flip-card card-backs" id="cardBacks"> 
+  </div> -->
+
+    <!-- display flipped cards here -->
+    <div class="row small-up-2 medium-up-3 workout-cards" id="rowCards">
+    </div> <!-- id: rowCards -->
+
+    <!--------------------------------------- END GAME --------------------------------------------->
+    <!--GY-->
+  </div>
+    <footer>
+
+
+  <div class="row footer" id="workoutComplete" style="display:none" >
+    <!-- "Workout Complete" Button that will appear when last card is flipped.
+          It will be hidden by default once the other sections and buttons are completed.-->
+        <div class="columns" style="width:100%; text-align:center;">
+          <button class="button right center-horizontal" id="workoutCompleteBtn" data-open="endgameModal" >Workout Complete!</button>
+          <!-- End Game modal with "go back" button and "save workout" button -->
+          <div class="reveal" id="endgameModal" data-reveal>
+            <h1>CONGRATULATIONS!</h1>
+            <p class="lead">Kudos to you for another great workout! Keep up the great work! If you enjoyed the workout
+              you
+              just did, save it to your favorites! </p>
+            <a class="secondary button" data-close id="goBack">Go Back</a>
+            <a class="button" data-open="saveModal">Save to Favorites</a>
+            <span aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <!--Secondary Modal pops up for saving your workout-->
+          <div class="reveal" id="saveModal" data-reveal>
+            <h2 class="noteName">Pick a name for your workout!</h2>
+            <form>
+              <div class="medium-12 cell">
+                <input type="text" id="workoutName" placeholder="Type awesome name for your workout here!">
+              </div>
+              <a class="button" id="saveButton" value="Save to Favorites">Save to Favorites</a>
+            </form>
+            <a class="secondary button" data-close id="goBack">Go Back</a>
+            <span aria-hidden="true"></span>
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+ 
+  <script type="text/javascript">
+      on_index = true;
+  </script>
+  <script href="js/vendor/modernizr.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./assets/js/vendor/foundation.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/vendor/what-input.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/confetti.js"></script>
+  <script src="./assets/js/gameEnd.js"></script>
+
+
+
+
+</body>
+
+</html>
