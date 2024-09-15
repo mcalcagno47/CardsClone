@@ -29,7 +29,7 @@ When the user opens the website, they will be prompted to select a suit, which c
 
 ## Links
 * Video demo: https://youtu.be/s0dPTozQHYM
-* The site: https://the-fighting-mongooses-official.github.io/Cards-Against-Apathy/
+* The site: https://mcalcagno47.github.io/CardsClone/index.html
 * Github: https://github.com/The-Fighting-Mongooses-Official/Cards-Against-Apathy/  
 
 ## Credits
